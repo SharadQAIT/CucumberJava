@@ -24,15 +24,15 @@ public class LoginDemo {
 
 	@When("the user navigates to the login page")
 	public void the_user_navigates_to_the_login_page() throws Exception {
-		driver.navigate().to("https://omnistage.solutionanalysts.us/login");
+		driver.navigate().to("https://mahontech.sapphire360.ai/login");
 		Thread.sleep(2000);
 
 	}
 
 	@And("enters the correct username and password")
 	public void enters_the_correct_username_and_password() throws Exception {
-		driver.findElement(By.id("exampleFormControlInput1")).sendKeys("sharad.khairnar@solutionanalysts.com");
-		driver.findElement(By.id("inputPassword")).sendKeys("Admin@123");
+		driver.findElement(By.id("exampleFormControlInput1")).sendKeys("Kevaughanmahon@gmail.com");
+		driver.findElement(By.id("inputPassword")).sendKeys("p@ss2wordKEV");
 		Thread.sleep(2000);
 
 	}
@@ -46,8 +46,8 @@ public class LoginDemo {
 
 	@And("the user has entered the OTP")
 	public void the_user_has_entered_the_otp() throws Exception {
-		driver.findElement(By.id("inputPassword")).sendKeys("123456");
 		Thread.sleep(2000);
+		driver.findElement(By.id("inputPassword")).sendKeys("123456");
 
 	}
 
